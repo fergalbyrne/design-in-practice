@@ -1,4 +1,4 @@
-# Technique: Description
+# Technique: <span style="font-weight: 300">Description</span>
 
 **one paragraph summary**
 

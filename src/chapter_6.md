@@ -1,4 +1,4 @@
-# Technique: The Socratic Method
+# Technique: <span style="font-weight: 300">The Socratic Method</span>
 
 **interrogate** _ask together_
 

@@ -1,4 +1,4 @@
-# Technique: Glossary
+# Technique: <span style="font-weight: 300">Glossary</span>
 
 **terms are invaluable in tech**
 

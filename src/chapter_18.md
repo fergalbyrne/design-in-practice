@@ -1,33 +1,19 @@
-# Objective - Demystify Design
+# Technique: <span style="font-weight: 300">Scientific Method</span>
 
-Not (just) going to the hammock
+**Succinct statement of unmet user objectives and cause(s)**
 
-**practice** - _what you do_
+not symptoms/anecdotes/desires
 
-concrete techniques with tangible outputs
+not remedy/solution/feature - challenge is to filter out
 
-demonstrable **progress** - _walk forward_
+modify your top story Title from symptom &rightarrow; problem
 
-activities you can make PM stories out of
+add Problem after the Description in the top story - link to diagnosis work
 
-- this make time for, throughout the dev process
-- not pleading for weeks of nebulous "hammock time" up front
+**subject to refinement**
+- as your understanding increases
+- don't let your problem statements get stale
 
-valuable artifacts that make the effort evident
+**This is the most important artifact you will have**
 
-tip and techniques, not a formal method or anything highfalutin'
-
-
-~~~admonish warning
-A beautiful stylish message:
-```clojure
-(defn testy []
-    "Hello World!)
-```
-
-```java
-public static void testy() {
-}
-```
-~~~
-
+_if you don't relentlessly focus on a problem you may make something that doesn't solve any problem_

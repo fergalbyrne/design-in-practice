@@ -1,4 +1,4 @@
-# Technique: PM Top Story/Ticket
+# Technique: <span style="font-weight: 300">PM Top Story/Ticket</span>
 
 **Several design techiques contribute to your 'top' story in PM**
 

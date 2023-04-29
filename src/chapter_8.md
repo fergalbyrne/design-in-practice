@@ -1,4 +1,4 @@
-# Technique: Reflective Inquiry
+# Technique: <span style="font-weight: 300">Reflective Inquiry</span>
 
 Not (just) going to the hammock
 

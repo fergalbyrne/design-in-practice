@@ -1,4 +1,4 @@
-# Objective - Demystify Design
+# Objective: <span style="font-weight: 300">Demystify Design</span>
 
 Not (just) going to the hammock
 

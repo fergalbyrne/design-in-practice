@@ -3,7 +3,7 @@ authors = ["fergalbyrne"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Datomic Cloud - The Immutable Database"
+title = "Design In Practice - Rich Hickey"
 
 [preprocessor]
 

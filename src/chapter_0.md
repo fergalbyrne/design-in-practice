@@ -1,4 +1,4 @@
-# Chapter 0 - Traditional Databases
+# Chapter 0 - Overview
 
 It's quite likely that most readers of this book simply take for granted what a "traditional
 database" is, mostly because these databases have become the default in the 25 years since the
@@ -11,34 +11,6 @@ RDBMS's will be dealt with shortly.
 ```
 
 ### What a Database System is for
-A database system is used when you have a requirement in your computer system to _record_, _process_, and _make decisions_ about
-_information_ whose size is larger than will fit in your computer's memory. 
-
-It's really the fact that the database (the collection of information)
-is so large that requires a system to handle it - we already have programming languages to manipulate
-the data in memory, but to do the same for abitrarily large collections of information, we need 
-a system (and often a different language) to do the same job.
-
-The situation is similar to that of computers themselves. Computers programs carry out logical and arithmetical operations
-on data, but the programs only contain instructions for the computer's CPU. The CPU has only a handful
-of _registers_ with which to carry out the operations, way too few to do anything non-trivial. So we 
-have programming languages that allow us to carry out "operations" on data that is housed in memory. Our "instructions"
-are automatically turned into many real instructions that are mostly loads, stores and address calculations, giving us 
-the illusion that our programs are operating on things in the much larger space of memory.
-
-The database system gives us the illusion that we can run similar "programs" on data sets which are much larger than our 
-computers' memory can hold. 
-
-Clearly this job is substantially more complicated than that done by
-our programming languages: after all the assembly languages of 1949-50 (which use only the real instructions) were partially replaced
-in FORTRAN by 1954 and completely in C by 1972 or so, with languages like Rust and Go now giving
-approaching the holy grail of maximum performance and close-to-optimal safety. In contrast, the world of
-database systems continues to be a frontier territory where everything is a compromise and 
-complexity in juggling cross-cutting concerns seems a fact of life.
-
-Traditional databases are typically Relational Database Management Systems (RDBMS). Whether
-they are commercial systems like Oracle, or Open Source systems like MySQL (and variants) or Postgres,
-they share the same set of major characteristics. 
 
 The choices behind these designs made good sense in a world that looked like this (VAX 11/780, late 1970's):
 

@@ -1,4 +1,4 @@
-# DM Columns: <span style="font-weight: 300">Approaches</span>
+# DM Rows: <span style="font-weight: 300">Criteria</span>
 
 _means of judging deciding_
 

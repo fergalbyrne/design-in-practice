@@ -25,12 +25,12 @@ not monotonic - ok! **stay open-minded**
 
 _these are words with a D this time_
 
-- **Describe** (situation)
-- **Diagnose** (possible problems)
-- **Delimit** (the problem you are going to solve)
-- **Direction** (strategy, approach)
-- **Design** (tactics, implementation plan)
-- **Dev** (build it)
+- **[Describe](chapter_12.md)** (situation)
+- **[Diagnose](chapter_14.md)** (possible problems)
+- **[Delimit](chapter_17.md)** (the problem you are going to solve)
+- **[Direction](chapter_19.md)** (strategy, approach)
+- **[Design](chapter_28.md)** (tactics, implementation plan)
+- **[Dev](chapter_30.md)** (build it)
 
 at any time:
 - **Decide** (to do, or not)

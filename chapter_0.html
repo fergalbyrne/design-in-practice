@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 0 - Overview - Design In Practice - Rich Hickey</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="././mdbook-admonish.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="foreword.html">Foreword</a></li><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="chapter_0.html" class="active"><strong aria-hidden="true">1.</strong> Chapter 0 - Overview</a></li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">2.</strong> Objective - Demystify Design</a></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">3.</strong> Design</a></li><li class="chapter-item expanded "><a href="chapter_3.html"><strong aria-hidden="true">4.</strong> Words</a></li><li class="chapter-item expanded "><a href="chapter_4.html"><strong aria-hidden="true">5.</strong> Technique: Glossary</a></li><li class="chapter-item expanded "><a href="chapter_5.html"><strong aria-hidden="true">6.</strong> Questions</a></li><li class="chapter-item expanded "><a href="chapter_6.html"><strong aria-hidden="true">7.</strong> Technique: The Socratic Method</a></li><li class="chapter-item expanded "><a href="chapter_7.html"><strong aria-hidden="true">8.</strong> Father Watson's Questions</a></li><li class="chapter-item expanded "><a href="chapter_8.html"><strong aria-hidden="true">9.</strong> Technique: Reflective Inquiry</a></li><li class="chapter-item expanded "><a href="chapter_9.html"><strong aria-hidden="true">10.</strong> Technique: PM Top Story/Ticket</a></li><li class="chapter-item expanded "><a href="chapter_10.html"><strong aria-hidden="true">11.</strong> Design Progress</a></li><li class="chapter-item expanded "><a href="chapter_11.html"><strong aria-hidden="true">12.</strong> Design Phases</a></li><li class="chapter-item expanded "><a href="chapter_12.html"><strong aria-hidden="true">13.</strong> Phase: Describe</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_13.html"><strong aria-hidden="true">13.1.</strong> Technique: Description</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_14.html"><strong aria-hidden="true">14.</strong> Phase: Diagnose</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_15.html"><strong aria-hidden="true">14.1.</strong> Technique: Scientific Method</a></li><li class="chapter-item expanded "><a href="chapter_16.html"><strong aria-hidden="true">14.2.</strong> Diagnose: Feature Requests</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_17.html"><strong aria-hidden="true">15.</strong> Phase: Delimit</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_18.html"><strong aria-hidden="true">15.1.</strong> Technique: Problem Statement</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_19.html"><strong aria-hidden="true">16.</strong> Phase: Direction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_20.html"><strong aria-hidden="true">16.1.</strong> Technique: Use Cases</a></li><li class="chapter-item expanded "><a href="chapter_21.html"><strong aria-hidden="true">16.2.</strong> Technique: Decision Matrix (DM)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_22.html"><strong aria-hidden="true">16.2.1.</strong> DM Columns: Approaches)</a></li><li class="chapter-item expanded "><a href="chapter_23.html"><strong aria-hidden="true">16.2.2.</strong> DM Rows: Criteria)</a></li><li class="chapter-item expanded "><a href="chapter_24.html"><strong aria-hidden="true">16.2.3.</strong> DM Cells: Aspects)</a></li><li class="chapter-item expanded "><a href="chapter_25.html"><strong aria-hidden="true">16.2.4.</strong> DM: Tips)</a></li><li class="chapter-item expanded "><a href="chapter_26.html"><strong aria-hidden="true">16.2.5.</strong> DM: Outputs)</a></li><li class="chapter-item expanded "><a href="chapter_27.html"><strong aria-hidden="true">16.2.6.</strong> DM: Benefits)</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="chapter_28.html"><strong aria-hidden="true">17.</strong> Phase: Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_29.html"><strong aria-hidden="true">17.1.</strong> Technique: Diagrams</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_30.html"><strong aria-hidden="true">18.</strong> Phase: Dev</a></li><li class="chapter-item expanded "><a href="chapter_31.html"><strong aria-hidden="true">19.</strong> Final Slides</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Design In Practice - Rich Hickey</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-0---overview"><a class="header" href="#chapter-0---overview">Chapter 0 - Overview</a></h1>
+<p>It's quite likely that most readers of this book simply take for granted what a &quot;traditional
+database&quot; is, mostly because these databases have become the default in the 25 years since the
+dot-com era. This chapter is aimed at explaining the most important characteristics of a traditional
+database system, including the reasons for the most important design choices behind them.</p>
+<div id="admonition-note" class="admonition note">
+<div class="admonition-title">
+<p>Note</p>
+<p><a class="admonition-anchor-link" href="#admonition-note"></a></p>
+</div>
+<div>
+<p>Newer database architectures claiming to solve some of the issues with traditional 
+RDBMS's will be dealt with shortly.</p>
+</div>
+</div>
+<h3 id="what-a-database-system-is-for"><a class="header" href="#what-a-database-system-is-for">What a Database System is for</a></h3>
+<p>The choices behind these designs made good sense in a world that looked like this (VAX 11/780, late 1970's):</p>
+<div class="table-wrapper"><table><thead><tr><th>Fact (at the time)</th><th>Typical Value</th><th>Some Consequences</th></tr></thead><tbody>
+<tr><td>Individual computers are a major purchasing decision</td><td>$350K+ (incl disks)</td><td>Plan and purchase a computer system which fully meets your needs for multiple years ahead</td></tr>
+<tr><td>CPU power is super-expensive and limited</td><td>&lt;1MIPS</td><td>Centralise query and updates in a single powerful machine</td></tr>
+<tr><td>Memory is extremely expensive</td><td>1MB RAM</td><td>Provision only the memory needed to process your workload</td></tr>
+<tr><td>Durable Storage (tape/hard disks) are expensive and slow</td><td>10ms seek 300MB disk $160K</td><td>Use storage sparingly: keep one copy of any data on disk, backup on a schedule to tape. Connect all your storage to the server with the powerful CPU and RAM</td></tr>
+<tr><td>Networks are really slow</td><td>dialup 9.6Kb/s - ethernet 1Mb/s</td><td>Minimise chatty back and forth queries - pack up as much into your query as possible, ask for as much back as you can</td></tr>
+<tr><td>Programmers are relatively cheap</td><td>$15-20K/year</td><td>Business has fixed requirements, programmers can spend days or weeks writing a given fixed query for a report</td></tr>
+<tr><td>Requirements change slowly</td><td>quarterly</td><td>Once written, queries and/or stored procedures can remain unchanged for years</td></tr>
+</tbody></table>
+</div>
+<p>Obviously things have changed substantially in the several decades since the late 1970's, but 
+importantly they changed quite incrementally between then and now. As a result, the designers 
+and developers of RDBMS systems have modified their designs one step at a time to take advantage 
+of the improvements as they occurred. We'll take note of these changes as we go along.</p>
+<p>Let's go into a bit more detail about some of these aspects:</p>
+<div id="admonition-item-of-information" class="admonition info">
+<div class="admonition-title">
+<p>'item' of information</p>
+<p><a class="admonition-anchor-link" href="#admonition-item-of-information"></a></p>
+</div>
+<div>
+<p>In this discussion, we'll be thinking of the information in the database as consisting of many small,
+aggregates of atomic or primitive values, which we'll call <em>item</em>s. For example, the information
+about me might include my first and last names, which would each be a string-valued item.
+In Clojure we'd represent my information something like this:</p>
+<pre><code class="language-clojure">(def fergal-info 
+  {:first-name &quot;Fergal&quot; :last-name &quot;Byrne&quot; ...})
+</code></pre>
+</div>
+</div>
+<h3 id="update-in-place"><a class="header" href="#update-in-place">Update In Place</a></h3>
+<p>Due to the high cost of hard disks back in the day, the storage available for your data was very 
+limited, so it made sense to store the data in a way where each item of data was in a <em>single place</em>
+in the larger store of items.</p>
+<p>When new data came in, consisting of new <em>values</em> for these items, what you would do is go to the <em>place</em>
+for each item and overwrite the old value with the new,  a strategy known as <strong>update in place</strong>. </p>
+<p>Several things fall out from this. First, for each potential item of information, <em>there is a place</em>: each 
+item has some sort of coordinates telling you how to either find the current value or where to
+write in a new value. In a traditional RDBMS, the coordinates are expressed as <code>&lt;Table&gt;.&lt;Row&gt;.&lt;Column&gt;</code> (see below).</p>
+<p>Secondly, because there's only one place for a value, you can only store the current value in that place, and any
+previous values will disappear unless you do something else to record them. Later, as disks became
+bigger and bigger, we could start keeping some copies of the old data, for example in places called
+<em>shadow tables</em> - these improvements were sometimes supported by the RDBMS, sometimes roll-your-own, and always pretty
+optional.</p>
+<p>Thirdly, the layout or <strong>schema</strong> of the database should avoid having multiple copies of an item. For example,
+in an eCommerce system, every <code>Order</code> has a customer, but we don't want to store the customer's first name
+and last name along with each of their orders - instead we'll store those in a single place for <code>Customer</code>s, and
+refer to that customer using the <code>customer-id</code> (this is called a <strong>foreign key</strong> as it is a key used in the <code>Order</code> for another 
+kind of data - the <code>Customers</code>). There is literally a whole theory of designing databases around these 
+concepts, and a database in the right layout is described as being in <em>normal form</em>.</p>
+<h3 id="a-client-server-architecture---its-over-there"><a class="header" href="#a-client-server-architecture---its-over-there">A Client-Server Architecture - &quot;It's <em>Over There</em>&quot;</a></h3>
+<p>The extreme of this is the dumb terminal remote-controlling the central mainframe or minicomputer, but from the 1980's the 
+typical business app running on a microcomputer, PC or workstation operated by compiling queries to send to
+the RDBMS and get back results in some binary form, all over a <em>connection</em> to the RDBMS.</p>
+<h3 id="structured-query-language-sql---a-string-based-interface"><a class="header" href="#structured-query-language-sql---a-string-based-interface">Structured Query Language (SQL) - a string-based interface</a></h3>
+<h3 id="tables-rows-and-columns---coordinates-for-items-and-shapes-for-data"><a class="header" href="#tables-rows-and-columns---coordinates-for-items-and-shapes-for-data">Tables, Rows and Columns - 'coordinates' for items and 'shapes' for data</a></h3>
+<h3 id="acid-transactions"><a class="header" href="#acid-transactions">ACID Transactions</a></h3>
+<ul>
+<li><strong>A</strong>tomic - either all operations in the transaction occur, or none of them</li>
+<li><strong>C</strong>onsistent - </li>
+<li><strong>I</strong>solated</li>
+<li><strong>D</strong>urable</li>
+</ul>
+<h3 id="indexes"><a class="header" href="#indexes">Indexes</a></h3>
+<pre class="mermaid">graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+</pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="chapter_1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="chapter_1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="mermaid.min.js"></script>
+        <script type="text/javascript" src="mermaid-init.js"></script>
+
+
+    </body>
+</html>
